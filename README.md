@@ -21,3 +21,15 @@ Things to Note
 
 I recommend deploying this template in a region you have little or no resources as it is resource heavy with NAT gateways and ENIs, the template default is US-EAST-1.
 The Ec2 machine uses an AMi from AMI catalog, AMIs are a regional resource - default region will be us-east-1, if you are changing region, update the template to a AMI image in the region you wish to deploy.
+
+
+Replication Steps
+
+Get bootstrap server from MSK cluster in order to create topics. Navigate to your complete MSK cluster, and select “Client information”
+
+You will see Authentication type as “PlainText” and next to it the Private Endpoint which is what we need.
+
+![IMj5-8Unf0RIuGrZ4rGDGM3g](https://github.com/Scorch116/MSKLambdaCFtemplate/assets/52601253/080b2a6f-ea7d-465c-ac84-9584cdf89841)
+
+
+
